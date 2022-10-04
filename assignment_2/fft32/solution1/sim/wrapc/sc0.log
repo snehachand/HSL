@@ -1,0 +1,5 @@
+   Build using "F:/Xilinx/Vivado/2018.2/msys64/mingw64/bin/g++"
+   Compiling fft.cpp_pre.cpp.tb.cpp
+   Compiling fft_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_FFT.cpp
+   Generating cosim.tv.exe

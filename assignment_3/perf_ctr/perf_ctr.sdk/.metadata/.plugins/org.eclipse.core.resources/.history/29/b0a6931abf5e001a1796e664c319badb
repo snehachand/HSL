@@ -1,0 +1,152 @@
+//Course		: EE5332-2020
+//Name			: 64 point DCT Test bench.
+//Description	: Takes in an input of size 64 points and gives
+//					64 points as output.
+//Author		: Jithendra K 
+
+#include <iostream>
+#include <fstream>
+
+#include "dct.h"
+
+#include "xcounter.h"
+#include "xdct.h"
+
+#define NORM(x) ((x) * (x)).real()
+
+void writeToDCT(XDct* xdctptr, dt_In *dr)
+{
+	XDct_Write_dataIn_Words(xdctptr, 0, (int *)(dr), SIZE);
+}
+
+void readFromDCT(XDct* xdctptr, dt_Out *dr)
+{
+	XDct_Read_dataOut_Words(xdctptr, 0, (int *)(dr), SIZE);
+}
+
+
+void dispf(float a) {
+	int q = a;
+	if (a < 0) q--;
+	int r = (1000 * (a-q));
+	xil_printf("%d.%03d", q, r);
+}
+
+
+int main()
+{
+	XDct xdct;
+	XDct* xdctptr = &xdct;
+
+	XCounter xc;
+    XCounter* xcptr = &xc;
+
+    int ctr, t1, t2, ts;
+    int t3, t4, tw, th, tr;
+
+    dt_in in[SIZE];
+    dt_out out[SIZE];
+
+
+	dt_in dataIn[SIZE] = {
+			#include "inputData.txt"
+			};
+
+	dt_out dataOut[SIZE];
+
+	dt_out exp_out[SIZE] = {
+             #include "expectedOutputData.txt"
+	         };
+
+	for(int i=0; i<SIZE; i++)
+	    {
+	    	in[i] = dataIn[i];
+	    }
+
+//	dt_in inputRead;
+//	dt_out expOutputRead;
+//	int errorCount;
+
+	//ifstream inputFile,expOutputFIle;
+	//ofstream outputFile;
+
+	//Read Input Data
+//	inputFile.open("inputData.txt",ios::in);
+//	for(int index = 0; index < SIZE; index++) {
+//		inputFile >> inputRead ;
+//		dataIn[index] = inputRead;
+//	}
+	XDct_Initialize(xdctptr, 0);
+	XCounter_Initialize(xcptr, 0);
+    XCounter_EnableAutoRestart(xcptr);
+	XCounter_Start(xcptr);
+
+	int result = 0;
+	int hwres = 0;
+
+
+
+	//Perform DCT operation
+	t1 = XCounter_Get_return(xcptr);
+	dct(dataIn, dataOut);
+	t2 = XCounter_Get_return(xcptr);
+	ts = t2-t1;
+
+	for(int k=0;k<SIZE;k++){
+			if(NORM(exp_out[k]-dataOut[k])>TOL) {
+			   xil_printf("SW-ERROR: [%d] \t ", k);
+			   dispf(dataOut[k]);
+			   xil_printf(" vs exp:\t ");
+			   dispf(exp_out[k]);
+			   xil_printf("\r\n");
+			   result ++;
+			}
+		}
+
+	t1 = XCounter_Get_return(xcptr);
+	writeToDCT(xdctptr, in);
+	t2 = XCounter_Get_return(xcptr);
+
+	XDct_Start(xdctptr);
+
+	while(!XDct_IsDone(xdctptr) && (ctr < 1000)) ctr++;
+		if(ctr ==1000) {
+			xil_printf("Timed out! Expect Errors...\r\n");
+		} else {
+
+		}
+
+	t3 = XCounter_Get_return(xcptr);
+	readFromDCT(xdctptr, dataOut);
+	t4 = XCounter_Get_return(xcptr);
+
+			for(int k=0;k<SIZE;k++){
+					if(NORM(exp_out[k]-dataOut[k])>TOL) {
+					   xil_printf("HW-ERROR: [%d] \t ", k);
+					   dispf(dataOut[k]);
+					   xil_printf(" vs exp:\t ");
+					   dispf(exp_out[k]);
+					   xil_printf("\r\n");
+					   hwres ++;
+					}
+				}
+
+
+
+
+
+	if (result != 0) {
+		xil_printf("FAIL SW: %d errors\r\n", result);
+	} else if (hwres != 0) {
+		xil_printf("FAIL HW: %d errors\r\n", hwres);
+	} else {
+		xil_printf("PASS\r\n");
+	}
+
+	xil_printf("SW DCT cycles: %d\r\n", ts);
+	xil_printf("Write cycles: %d\r\n", t2-t1);
+	xil_printf("Compute cycles: %d\r\n", t3-t2);
+	xil_printf("Read cycles: %d\r\n", t4-t3);
+
+	return result + hwres;
+}

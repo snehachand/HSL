@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+PASS
+$finish called at time : 950 ns : File "D:/1_EE5332/asg1/asg1.srcs/sim_1/new/seq_mult_tb.v" Line 141

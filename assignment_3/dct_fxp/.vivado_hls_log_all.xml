@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:39:35.971+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:39:35.942+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:38:50.766+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:38:50.711+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:36:51.395+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:36:50.884+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:27:37.974+0530"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:27:37.940+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:26:34.708+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="dct_fxp" solutionName="solution1" date="2020-03-09T12:24:17.047+0530"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/constant' to 'dct/constant_r' to avoid the conflict with HDL keywords or other object names." projectName="dct" solutionName="solution1" date="2020-03-05T11:41:14.632+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'dct_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="dct" solutionName="solution1" date="2020-03-05T11:41:47.501+0530" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

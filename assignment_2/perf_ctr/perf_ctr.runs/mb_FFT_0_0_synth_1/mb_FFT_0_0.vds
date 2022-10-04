@@ -1,0 +1,1346 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 17 18:00:17 2020
+# Process ID: 16820
+# Current directory: D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1
+# Command line: vivado.exe -log mb_FFT_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_FFT_0_0.tcl
+# Log file: D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1/mb_FFT_0_0.vds
+# Journal file: D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mb_FFT_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 258.438 ; gain = 37.906
+Command: synth_design -top mb_FFT_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20496 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 400.094 ; gain = 95.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mb_FFT_0_0' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ip/mb_FFT_0_0/synth/mb_FFT_0_0.vhd:81]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:12' bound to instance 'U0' of component 'FFT' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ip/mb_FFT_0_0/synth/mb_FFT_0_0.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'FFT' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:40]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:102]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:105]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:181]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:188]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:193]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:197]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:225]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:228]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:231]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:233]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:236]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:238]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:240]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:242]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:244]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:246]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:248]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:250]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'xin_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:363]
+INFO: [Synth 8-638] synthesizing module 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:91]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real_ram' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:13' bound to instance 'FFT_xin_M_real_ram_U' of component 'FFT_xin_M_real_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'FFT_xin_M_real_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:31]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FFT_xin_M_real_ram' (1#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'FFT_xin_M_real' (2#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:91]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'xin_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:377]
+	Parameter DataWidth bound to: 5 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_rev_32' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:75' bound to instance 'rev_32_U' of component 'FFT_rev_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:391]
+INFO: [Synth 8-638] synthesizing module 'FFT_rev_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:88]
+	Parameter DataWidth bound to: 5 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_rev_32_rom' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:12' bound to instance 'FFT_rev_32_rom_U' of component 'FFT_rev_32_rom' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'FFT_rev_32_rom' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:27]
+	Parameter DWIDTH bound to: 5 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'FFT_rev_32_rom' (3#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'FFT_rev_32' (4#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_rev_32.vhd:88]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT0_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:403]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT0_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:417]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT1_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:431]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT1_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:445]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT2_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:459]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT2_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:473]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT3_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:487]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT3_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:501]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT4_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:515]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'data_OUT4_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:529]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'xout_M_real_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:543]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_xin_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_xin_M_real.vhd:76' bound to instance 'xout_M_imag_U' of component 'FFT_xin_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:557]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_AXILiteS_s_axi' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:12' bound to instance 'FFT_AXILiteS_s_axi_U' of component 'FFT_AXILiteS_s_axi' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:571]
+INFO: [Synth 8-638] synthesizing module 'FFT_AXILiteS_s_axi' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:94]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_AXILiteS_s_axi_ram' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:749' bound to instance 'int_data_IN_M_real' of component 'FFT_AXILiteS_s_axi_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'FFT_AXILiteS_s_axi_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:772]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FFT_AXILiteS_s_axi_ram' (5#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:772]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_AXILiteS_s_axi_ram' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:749' bound to instance 'int_data_IN_M_imag' of component 'FFT_AXILiteS_s_axi_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:249]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_AXILiteS_s_axi_ram' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:749' bound to instance 'int_data_OUT_M_real' of component 'FFT_AXILiteS_s_axi_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:270]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_AXILiteS_s_axi_ram' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:749' bound to instance 'int_data_OUT_M_imag' of component 'FFT_AXILiteS_s_axi_ram' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'FFT_AXILiteS_s_axi' (6#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:94]
+INFO: [Synth 8-3491] module 'FFT0' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:12' bound to instance 'grp_FFT0_fu_306' of component 'FFT0' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:616]
+INFO: [Synth 8-638] synthesizing module 'FFT0' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:41]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:87]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:90]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:99]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:101]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:106]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:122]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:133]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:141]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:151]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:158]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:163]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:167]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:169]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:173]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FFT0_W_M_real' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:84' bound to instance 'W_M_real_U' of component 'FFT0_W_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'FFT0_W_M_real' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:97]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FFT0_W_M_real_rom' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:12' bound to instance 'FFT0_W_M_real_rom_U' of component 'FFT0_W_M_real_rom' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'FFT0_W_M_real_rom' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:27]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'FFT0_W_M_real_rom' (7#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'FFT0_W_M_real' (8#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_real.vhd:97]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FFT0_W_M_imag' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:84' bound to instance 'W_M_imag_U' of component 'FFT0_W_M_imag' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'FFT0_W_M_imag' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:97]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FFT0_W_M_imag_rom' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:12' bound to instance 'FFT0_W_M_imag_rom_U' of component 'FFT0_W_M_imag_rom' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'FFT0_W_M_imag_rom' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:27]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'FFT0_W_M_imag_rom' (9#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'FFT0_W_M_imag' (10#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0_W_M_imag.vhd:97]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fsub_32ns_32nbkb' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fsub_32ns_32nbkb.vhd:11' bound to instance 'FFT_fsub_32ns_32nbkb_U1' of component 'FFT_fsub_32ns_32nbkb' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:312]
+INFO: [Synth 8-638] synthesizing module 'FFT_fsub_32ns_32nbkb' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fsub_32ns_32nbkb.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_ap_fsub_3_full_dsp_32' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:59' bound to instance 'FFT_ap_fsub_3_full_dsp_32_u' of component 'FFT_ap_fsub_3_full_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fsub_32ns_32nbkb.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fsub_3_full_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fsub_3_full_dsp_32' (28#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fsub_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'FFT_fsub_32ns_32nbkb' (29#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fsub_32ns_32nbkb.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_faddfsub_32nscud' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_faddfsub_32nscud.vhd:11' bound to instance 'FFT_faddfsub_32nscud_U2' of component 'FFT_faddfsub_32nscud' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'FFT_faddfsub_32nscud' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_faddfsub_32nscud.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_ap_faddfsub_3_full_dsp_32' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:59' bound to instance 'FFT_ap_faddfsub_3_full_dsp_32_u' of component 'FFT_ap_faddfsub_3_full_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_faddfsub_32nscud.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_faddfsub_3_full_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:208]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_faddfsub_3_full_dsp_32' (30#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_faddfsub_3_full_dsp_32.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'FFT_faddfsub_32nscud' (31#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_faddfsub_32nscud.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fadd_32ns_32ndEe' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:11' bound to instance 'FFT_fadd_32ns_32ndEe_U3' of component 'FFT_fadd_32ns_32ndEe' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'FFT_fadd_32ns_32ndEe' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_ap_fadd_3_full_dsp_32' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:59' bound to instance 'FFT_ap_fadd_3_full_dsp_32_u' of component 'FFT_ap_fadd_3_full_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fadd_3_full_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fadd_3_full_dsp_32' (32#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'FFT_fadd_32ns_32ndEe' (33#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fadd_32ns_32ndEe' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:11' bound to instance 'FFT_fadd_32ns_32ndEe_U4' of component 'FFT_fadd_32ns_32ndEe' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:358]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fmul_32ns_32neOg' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:11' bound to instance 'FFT_fmul_32ns_32neOg_U5' of component 'FFT_fmul_32ns_32neOg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'FFT_fmul_32ns_32neOg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_ap_fmul_2_max_dsp_32' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:59' bound to instance 'FFT_ap_fmul_2_max_dsp_32_u' of component 'FFT_ap_fmul_2_max_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fmul_2_max_dsp_32' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fmul_2_max_dsp_32' (41#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/ip/FFT_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'FFT_fmul_32ns_32neOg' (42#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fmul_32ns_32neOg' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:11' bound to instance 'FFT_fmul_32ns_32neOg_U6' of component 'FFT_fmul_32ns_32neOg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:388]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fmul_32ns_32neOg' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:11' bound to instance 'FFT_fmul_32ns_32neOg_U7' of component 'FFT_fmul_32ns_32neOg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:403]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FFT_fmul_32ns_32neOg' declared at 'd:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:11' bound to instance 'FFT_fmul_32ns_32neOg_U8' of component 'FFT_fmul_32ns_32neOg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:418]
+INFO: [Synth 8-256] done synthesizing module 'FFT0' (43#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FFT' (44#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'mb_FFT_0_0' (45#1) [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ip/mb_FFT_0_0/synth/mb_FFT_0_0.vhd:81]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design flt_round_dsp_opt_full has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized64 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized64 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized64 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized62 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized62 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized62 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized1 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design special_detect__parameterized0 has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized58 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized58 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized58 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized58 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized58 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port CLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 562.836 ; gain = 258.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 562.836 ; gain = 258.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 562.836 ; gain = 258.492
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ip/mb_FFT_0_0/constraints/FFT_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ip/mb_FFT_0_0/constraints/FFT_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  FDE => FDRE: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 820.152 ; gain = 2.504
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:02:27 . Memory (MB): peak = 820.152 ; gain = 515.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:02:27 . Memory (MB): peak = 820.152 ; gain = 515.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:02:27 . Memory (MB): peak = 820.152 ; gain = 515.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FFT_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FFT_AXILiteS_s_axi'
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_4_reg_521_reg' and it is trimmed from '64' to '5' bits. [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:571]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_3_reg_473_reg' and it is trimmed from '64' to '5' bits. [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:563]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_315_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_403_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_362_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_380_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_403_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_362_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_380_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "grp_FFT0_fu_306_FFT_stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FFT_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FFT_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:02:32 . Memory (MB): peak = 820.152 ; gain = 515.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/FFT_ap_fsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/grp_FFT0_fu_306/FFT_faddfsub_32nscud_U2/FFT_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fadd_32ns_32ndEe:/FFT_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fmul_32ns_32neOg:/FFT_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'FFT_faddfsub_32nscud_U2/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_faddfsub_32nscud.vhd:81]
+INFO: [Synth 8-4471] merging register 'FFT_fadd_32ns_32ndEe_U3/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:73]
+INFO: [Synth 8-4471] merging register 'FFT_fadd_32ns_32ndEe_U4/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:73]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U5/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U5/din1_buf1_reg[31:0]' into 'FFT_fadd_32ns_32ndEe_U3/din0_buf1_reg[31:0]' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U6/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U6/din1_buf1_reg[31:0]' into 'FFT_fadd_32ns_32ndEe_U4/din0_buf1_reg[31:0]' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U7/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U7/din0_buf1_reg[31:0]' into 'FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[31:0]' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:75]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U7/din1_buf1_reg[31:0]' into 'FFT_fadd_32ns_32ndEe_U3/din0_buf1_reg[31:0]' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U8/ce_r_reg' into 'FFT_fsub_32ns_32nbkb_U1/ce_r_reg' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U8/din0_buf1_reg[31:0]' into 'FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[31:0]' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:75]
+INFO: [Synth 8-4471] merging register 'FFT_fmul_32ns_32neOg_U8/din1_buf1_reg[31:0]' into 'FFT_fadd_32ns_32ndEe_U4/din0_buf1_reg[31:0]' [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element FFT_faddfsub_32nscud_U2/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_faddfsub_32nscud.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fadd_32ns_32ndEe_U3/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fadd_32ns_32ndEe_U4/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fadd_32ns_32ndEe.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U5/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U5/din1_buf1_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U6/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U6/din1_buf1_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U7/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U7/din0_buf1_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U7/din1_buf1_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U8/ce_r_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U8/din0_buf1_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element FFT_fmul_32ns_32neOg_U8/din1_buf1_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_fmul_32ns_32neOg.vhd:77]
+WARNING: [Synth 8-3936] Found unconnected internal register 'index_reg_442_reg' and it is trimmed from '32' to '4' bits. [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:500]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Ulimit_reg_447_reg' and it is trimmed from '32' to '5' bits. [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT0.vhd:497]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-3971] The signal FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/q0_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:807]
+INFO: [Synth 8-3971] The signal FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/q0_reg was removed.  [d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ipshared/34ef/hdl/vhdl/FFT_AXILiteS_s_axi.vhd:807]
+INFO: [Synth 8-3971] The signal FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[31]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/index_shift_cast_reg_414_reg[3]' (FDE) to 'U0/grp_FFT0_fu_306/pass_shift_cast_reg_409_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_stage_cast1_reg_419_reg[5]' (FDE) to 'U0/grp_FFT0_fu_306/pass_shift_cast_reg_409_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[31]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[31]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[25]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[26]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[27]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[28]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[30]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[25]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[26]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[27]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[28]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[30] )
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[3]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[5]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[10]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[25]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[26]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[27]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[28]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[30]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[25]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[26]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[27]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[3]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[5]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[10]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[25]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[26]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[27]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[28]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[30]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[25]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[26]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[27]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[3]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[5]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[10]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\grp_FFT0_fu_306/pass_shift_cast_reg_409_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\grp_FFT0_fu_306/p_r_M_real_reg_489_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\grp_FFT0_fu_306/p_r_M_real_reg_489_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (i_5_0) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_2) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_4) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_6) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_8) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_10) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_12) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_14) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_16) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_18) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_20) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_22) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_24) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_26) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_28) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_30) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_32) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_34) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_36) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_38) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_40) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_42) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_44) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_46) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_48) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_50) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_52) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_54) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_56) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_58) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_60) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_62) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_64) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_0) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_2) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_4) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_6) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_8) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_10) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_12) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_14) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_16) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_18) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_20) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_22) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_24) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_26) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_28) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_30) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_32) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_34) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_36) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_38) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_40) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_42) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_44) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_46) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_48) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_50) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_52) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_54) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_56) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_58) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_60) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_62) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (i_5_64) is unused and will be removed from module FFT.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized5__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized5__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized5__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized5.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fsub_32ns_32nbkb_U1/ce_r_reg) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[31]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[30]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[29]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[28]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[27]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[26]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[25]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[24]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[23]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[22]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[21]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[20]) is unused and will be removed from module FFT.
+WARNING: [Synth 8-3332] Sequential element (grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/dout_r_reg[19]) is unused and will be removed from module FFT.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[14]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/W_M_imag_U/FFT0_W_M_imag_rom_U/q0_reg[19]' (FDE) to 'U0/grp_FFT0_fu_306/W_M_real_U/FFT0_W_M_real_rom_U/q0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[14]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/p_r_M_imag_reg_495_reg[19]' (FDE) to 'U0/grp_FFT0_fu_306/p_r_M_real_reg_489_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[14]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U6/din0_buf1_reg[19]' (FD) to 'U0/grp_FFT0_fu_306/FFT_fmul_32ns_32neOg_U5/din0_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/index_shift_cast_reg_414_reg[2]' (FDE) to 'U0/grp_FFT0_fu_306/tmp_cast_2_reg_429_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/index_shift_cast_reg_414_reg[1]' (FDE) to 'U0/grp_FFT0_fu_306/pass_shift_cast_reg_409_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/tmp_cast_reg_424_reg[2]' (FDE) to 'U0/grp_FFT0_fu_306/pass_shift_cast_reg_409_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/tmp_cast_reg_424_reg[4]' (FDE) to 'U0/grp_FFT0_fu_306/tmp_cast_2_reg_429_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\grp_FFT0_fu_306/tmp_cast_2_reg_429_reg[4] )
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/tmp_cast_2_reg_429_reg[3]' (FDE) to 'U0/grp_FFT0_fu_306/FFT_stage_cast1_reg_419_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:02:47 . Memory (MB): peak = 820.152 ; gain = 515.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_1/xin_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_1/xin_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_2/xin_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_2/xin_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_3/data_OUT0_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_3/data_OUT0_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_4/data_OUT0_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_4/data_OUT0_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_5/data_OUT1_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_5/data_OUT1_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_7/data_OUT1_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_7/data_OUT1_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_8/data_OUT2_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_8/data_OUT2_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_10/data_OUT2_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_10/data_OUT2_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_13/data_OUT3_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_13/data_OUT3_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_14/data_OUT3_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_14/data_OUT3_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_39/data_OUT4_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_39/data_OUT4_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_40/data_OUT4_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_40/data_OUT4_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_41/xout_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_41/xout_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_42/xout_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_42/xout_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_43/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_43/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_44/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_44/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/gen_write[1].mem_reg to conserve power
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_45/FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/gen_write[1].mem_reg to conserve power
+INFO: [Synth 8-4480] The timing for the instance U0/i_5_46/FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:03:20 . Memory (MB): peak = 884.164 ; gain = 579.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:03:24 . Memory (MB): peak = 912.383 ; gain = 608.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/i_5_1870' (FD) to 'U0/i_5_1869'
+INFO: [Synth 8-3886] merging instance 'U0/grp_FFT0_fu_306/tmp_cast_reg_424_reg[3]' (FDE) to 'U0/grp_FFT0_fu_306/FFT_stage_cast1_reg_419_reg[4]'
+INFO: [Synth 8-4480] The timing for the instance U0/xin_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xin_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xin_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xin_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT0_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT0_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT0_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT0_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT1_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT1_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT1_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT1_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT2_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT2_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT2_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT2_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT3_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT3_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT3_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT3_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT4_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT4_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT4_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/data_OUT4_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xout_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xout_M_real_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xout_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/xout_M_imag_U/FFT_xin_M_real_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/FFT_AXILiteS_s_axi_U/int_data_IN_M_real/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/FFT_AXILiteS_s_axi_U/int_data_IN_M_imag/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/FFT_AXILiteS_s_axi_U/int_data_OUT_M_real/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/FFT_AXILiteS_s_axi_U/int_data_OUT_M_imag/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:03:28 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:03:29 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:03:29 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:03:31 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:03:31 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:03:31 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:03:31 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    36|
+|2     |DSP48E1   |     4|
+|3     |DSP48E1_1 |     4|
+|4     |DSP48E1_2 |     4|
+|5     |DSP48E1_3 |     4|
+|6     |DSP48E1_4 |     4|
+|7     |LUT1      |    28|
+|8     |LUT2      |   192|
+|9     |LUT3      |   795|
+|10    |LUT4      |   362|
+|11    |LUT5      |   481|
+|12    |LUT6      |   348|
+|13    |MUXCY     |   280|
+|14    |MUXF7     |    37|
+|15    |RAMB18E1  |    14|
+|16    |RAMB36E1  |     4|
+|17    |XORCY     |   100|
+|18    |FDE       |    12|
+|19    |FDRE      |  1870|
+|20    |FDSE      |     8|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:03:31 . Memory (MB): peak = 917.383 ; gain = 613.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 768 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:02:12 . Memory (MB): peak = 917.383 ; gain = 355.723
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:03:32 . Memory (MB): peak = 917.383 ; gain = 613.039
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 503 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 88 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 76 instances
+  FDE => FDRE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+428 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:03:48 . Memory (MB): peak = 917.383 ; gain = 623.105
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1/mb_FFT_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 917.383 ; gain = 0.000
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/1_EE5332/assignment_2/perf_ctr/perf_ctr.srcs/sources_1/bd/mb/ip/mb_FFT_0_0/mb_FFT_0_0.xci
+config_ip_cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 917.383 ; gain = 0.000
+INFO: [Coretcl 2-1174] Renamed 433 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/1_EE5332/assignment_2/perf_ctr/perf_ctr.runs/mb_FFT_0_0_synth_1/mb_FFT_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_FFT_0_0_utilization_synth.rpt -pb mb_FFT_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 917.383 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 17 18:07:29 2020...

@@ -1,0 +1,8 @@
+dct_fadd_32ns_32nbkb
+dct_fmul_32ns_32ncud
+dct_fptrunc_64ns_dEe
+dct_fpext_32ns_64eOg
+dct_dmul_64ns_64nfYi
+dct_constant_r
+dct_AXILiteS_s_axi
+dct

@@ -1,0 +1,787 @@
+INFO-FLOW: Workspace D:/1_EE5332/assignment_3/dct/solution1 opened at Thu Mar 05 11:40:52 +0530 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.135 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.137 sec.
+Command     ap_source done; 0.138 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7a35tcpg236-1 
+Execute       add_library xilinx/artix7/artix7:xc7a35t:cpg236:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7a35t 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/artix7/artix7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7a35tcpg236-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.263 sec.
+Execute   set_part xc7a35tcpg236-1 -tool vivado 
+Execute     add_library xilinx/artix7/artix7:xc7a35t:cpg236:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7a35t 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/artix7/artix7_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   source ./dct/solution1/directives.tcl 
+Execute     set_directive_interface -mode s_axilite -register dct dataIn 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataIn 
+Execute     set_directive_interface -mode s_axilite -register dct dataOut 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataIn 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataOut 
+Execute     set_directive_interface -mode s_axilite dct 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataIn 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataOut 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'src/dct.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling src/dct.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted src/dct.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "src/dct.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E src/dct.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp
+Command       clang done; 1.986 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2018.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp"  -o "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.207 sec.
+INFO-FLOW: GCC PP time: 3 seconds per iteration
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataIn 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataOut 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataIn 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode register=positionBoolean1 port=positionBooleanTextRequireddataOut 
+INFO-FLOW: Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp std=gnu++98 -directive=D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.86 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp std=gnu++98 -directive=D:/1_EE5332/assignment_3/dct/solution1/solution1.json 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=D:/1_EE5332/assignment_3/dct/solution1/solution1.json -quiet -fix-errors D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.075 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr F:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/xilinx-dataflow-lawyer.dct.pp.0.cpp.diag.yml D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/xilinx-dataflow-lawyer.dct.pp.0.cpp.out.log 2> D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/xilinx-dataflow-lawyer.dct.pp.0.cpp.err.log 
+Command       ap_eval done; 0.673 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.652 sec.
+INFO-FLOW: tidy-3.1 time 3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.034 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "F:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.2.cpp" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.2.cpp
+Command       clang done; 0.879 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.bc" 
+INFO-FLOW: exec F:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain F:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot -I F:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.bc
+Command       clang done; 1.332 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.g.bc -hls-opt -except-internalize dct -LF:/Xilinx/Vivado/2018.2/win64/lib -lhlsm -lhlsmc++ -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 7.898 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 102.047 ; gain = 46.344
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 102.047 ; gain = 46.344
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.pp.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.342 sec.
+Execute         llvm-ld D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LF:/Xilinx/Vivado/2018.2/win64/lib -lfloatconversion -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.073 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top dct -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.0.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.6 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 196.652 ; gain = 140.949
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.1.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'std::sqrt<int>' into 'dct' (src/dct.cpp:115) automatically.
+Command         transform done; 0.253 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.2.prechk.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 224.234 ; gain = 168.531
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.g.1.bc to D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.1.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.347 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.1.tmp.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 275.313 ; gain = 219.609
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.2.bc -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 275.313 ; gain = 219.609
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.829 sec.
+Command     elaborate done; 22.233 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+Execute       ap_set_top_model dct 
+Execute       get_model_list dct -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model dct 
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Model list for configure: dct
+INFO-FLOW: Configuring Module : dct ...
+Execute       set_default_model dct 
+Execute       apply_spec_resource_limit dct 
+INFO-FLOW: Model list for preprocess: dct
+INFO-FLOW: Preprocessing Module: dct ...
+Execute       set_default_model dct 
+Execute       cdfg_preprocess -model dct 
+Execute       rtl_gen_preprocess dct 
+WARNING: [SYN 201-107] Renaming port name 'dct/constant' to 'dct/constant_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct 
+Execute       schedule -model dct 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 23.277 seconds; current allocated memory: 218.548 MB.
+Execute       report -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.sched.adb -f 
+INFO-FLOW: Finish scheduling dct.
+Execute       set_default_model dct 
+Execute       bind -model dct 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=dct
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 218.895 MB.
+Execute       report -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.verbose.bind.rpt -verbose -f 
+Execute       db_write -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.bind.adb -f 
+INFO-FLOW: Finish binding dct.
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for RTL generation: dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model dct -vendor xilinx -mg_file D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/dataIn' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/dataOut' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'dataOut' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'dct_fadd_32ns_32ns_32_5_full_dsp_1' to 'dct_fadd_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dct_fmul_32ns_32ns_32_4_max_dsp_1' to 'dct_fmul_32ns_32ncud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dct_fptrunc_64ns_32_1_1' to 'dct_fptrunc_64ns_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dct_fpext_32ns_64_1_1' to 'dct_fpext_32ns_64eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dct_dmul_64ns_64ns_64_6_max_dsp_1' to 'dct_dmul_64ns_64nfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dct_dmul_64ns_64nfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dct_fadd_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dct_fmul_32ns_32ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dct_fpext_32ns_64eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dct_fptrunc_64ns_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+Command       create_rtl_model done; 0.128 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.284 seconds; current allocated memory: 219.672 MB.
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/1_EE5332/assignment_3/dct/solution1/syn/systemc/dct -synmodules dct 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vhdl -o D:/1_EE5332/assignment_3/dct/solution1/syn/vhdl/dct 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vlog -o D:/1_EE5332/assignment_3/dct/solution1/syn/verilog/dct 
+Execute       export_constraint_db -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl -f -tool general 
+Execute       report -model dct -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.design.xml -verbose -f -dv 
+Execute       report -model dct -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info dct -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct -p D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db 
+Execute       report -model dct -o D:/1_EE5332/assignment_3/dct/solution1/syn/report/dct_csynth.rpt -f 
+Execute       report -model dct -o D:/1_EE5332/assignment_3/dct/solution1/syn/report/dct_csynth.xml -f -x 
+Execute       report -model dct -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.verbose.rpt -verbose -f 
+Execute       db_write -model dct -o D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.adb -f 
+Execute       sc_get_clocks dct 
+Execute       sc_get_portdomain dct 
+INFO-FLOW: Model list for RTL component generation: dct
+INFO-FLOW: Handling components in module [dct] ... 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+INFO-FLOW: Found component dct_fadd_32ns_32nbkb.
+INFO-FLOW: Append model dct_fadd_32ns_32nbkb
+INFO-FLOW: Found component dct_fmul_32ns_32ncud.
+INFO-FLOW: Append model dct_fmul_32ns_32ncud
+INFO-FLOW: Found component dct_fptrunc_64ns_dEe.
+INFO-FLOW: Append model dct_fptrunc_64ns_dEe
+INFO-FLOW: Found component dct_fpext_32ns_64eOg.
+INFO-FLOW: Append model dct_fpext_32ns_64eOg
+INFO-FLOW: Found component dct_dmul_64ns_64nfYi.
+INFO-FLOW: Append model dct_dmul_64ns_64nfYi
+INFO-FLOW: Found component dct_constant_r.
+INFO-FLOW: Append model dct_constant_r
+INFO-FLOW: Found component dct_AXILiteS_s_axi.
+INFO-FLOW: Append model dct_AXILiteS_s_axi
+INFO-FLOW: Append model dct
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: dct_fadd_32ns_32nbkb dct_fmul_32ns_32ncud dct_fptrunc_64ns_dEe dct_fpext_32ns_64eOg dct_dmul_64ns_64nfYi dct_constant_r dct_AXILiteS_s_axi dct
+INFO-FLOW: To file: write model dct_fadd_32ns_32nbkb
+INFO-FLOW: To file: write model dct_fmul_32ns_32ncud
+INFO-FLOW: To file: write model dct_fptrunc_64ns_dEe
+INFO-FLOW: To file: write model dct_fpext_32ns_64eOg
+INFO-FLOW: To file: write model dct_dmul_64ns_64nfYi
+INFO-FLOW: To file: write model dct_constant_r
+INFO-FLOW: To file: write model dct_AXILiteS_s_axi
+INFO-FLOW: To file: write model dct
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.119 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.121 sec.
+Command       ap_source done; 0.121 sec.
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'dct_constant_r_rom' using auto ROMs.
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.379 sec.
+Execute       get_config_sdx -target 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.12 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.122 sec.
+Command       ap_source done; 0.123 sec.
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+Command       ap_source done; 0.105 sec.
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute       sc_get_clocks dct 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 277.254 ; gain = 221.551
+INFO: [SYSC 207-301] Generating SystemC RTL for dct.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+Command     autosyn done; 2.644 sec.
+Command   csynth_design done; 24.881 sec.
+Command ap_source done; 25.247 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/1_EE5332/assignment_3/dct/solution1 opened at Thu Mar 05 11:41:28 +0530 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.145 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.148 sec.
+Command     ap_source done; 0.149 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7a35tcpg236-1 
+Execute       add_library xilinx/artix7/artix7:xc7a35t:cpg236:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7a35t 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/artix7/artix7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7a35tcpg236-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.272 sec.
+Execute   export_design -rtl verilog -format ip_catalog -display_name dct 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.133 sec.
+Command     ap_source done; 0.133 sec.
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.12 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.122 sec.
+Command     ap_source done; 0.122 sec.
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+Command     ap_source done; 0.109 sec.
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.compgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute     sc_get_clocks dct 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/impl/misc/dct_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     ::config_rtl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.constraint.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/dct.tbgen.tcl 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.127 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.13 sec.
+Command     ap_source done; 0.13 sec.
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 21.198 sec.
+Command ap_source done; 21.484 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/1_EE5332/assignment_3/dct/solution1 opened at Mon Mar 09 12:45:20 +0530 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Command     open_platform done; 0.143 sec.
+Execute     import_lib F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Command           ap_source done; 0.768 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Command         ap_source done; 0.806 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Command       ap_source done; 1.022 sec.
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Command       ap_source done; 0.119 sec.
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Command       ap_source done; 0.279 sec.
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 1.867 sec.
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source done; 0.37 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source done; 0.186 sec.
+Command           ap_source done; 0.252 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source done; 0.103 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.238 sec.
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 1.276 sec.
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 1.345 sec.
+Command     ap_source done; 1.346 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Command       ap_source done; 0.129 sec.
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_hp.hlp 
+Command     import_lib done; 0.442 sec.
+Execute     source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source F:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7a35tcpg236-1 
+Execute       add_library xilinx/artix7/artix7:xc7a35t:cpg236:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7a35t 
+Command         license_isbetapart done; error code: 1; 0.229 sec.
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.3 sec.
+Execute       add_library xilinx/artix7/artix7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7a35tcpg236-1'
+Execute       get_default_platform 
+Command     set_part done; 0.473 sec.
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 5200}  {LUT 20800}     {FF 41600}  {DSP48E 90}     {BRAM 100}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 4.919 sec.
+Execute   csim_design -quiet 
+Execute     source D:/1_EE5332/assignment_3/dct/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted D:/1_EE5332/assignment_3/data/inputData.txt 
+Execute     is_xip D:/1_EE5332/assignment_3/data/inputData.txt 
+Execute     is_encrypted D:/1_EE5332/assignment_3/data/expectedOutputData.txt 
+Execute     is_xip D:/1_EE5332/assignment_3/data/expectedOutputData.txt 
+Execute     is_encrypted D:/1_EE5332/assignment_3/src/dct_tb.cpp 
+Execute     is_xip D:/1_EE5332/assignment_3/src/dct_tb.cpp 
+Execute     is_encrypted D:/1_EE5332/assignment_3/src/dct.cpp 
+Execute     is_xip D:/1_EE5332/assignment_3/src/dct.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.998 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.98 sec.
+Command ap_source done; 20.005 sec.
+Execute cleanup_all 

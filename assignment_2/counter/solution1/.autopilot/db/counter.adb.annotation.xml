@@ -1,0 +1,5 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="6" filename="counter.cpp" linenumber="4" name="ctr_assign" contextFuncName="counter" moduleName="counter" rtlName="ctr_assign_fu_22_p2" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\1_EE5332\assignment_2"><\/item>
+<\/annotationInfo>
+</annotationInfo>

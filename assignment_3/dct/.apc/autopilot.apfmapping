@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dct.cpp" path="D:\1_EE5332\assignment_3\src\dct.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="inputData.txt" path="D:\1_EE5332\assignment_3\data\inputData.txt"/>
+    <originFiles name="expectedOutputData.txt" path="D:\1_EE5332\assignment_3\data\expectedOutputData.txt"/>
+    <originFiles name="dct_tb.cpp" path="D:\1_EE5332\assignment_3\src\dct_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

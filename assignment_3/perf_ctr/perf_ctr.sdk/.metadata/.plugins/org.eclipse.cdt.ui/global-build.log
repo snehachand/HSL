@@ -1,0 +1,1275 @@
+13:28:40 **** Build of project dct_perf_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/counter_v1_0/src"
+make -C microblaze_0/libsrc/counter_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/dct_v1_0/src"
+make -C microblaze_0/libsrc/dct_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/counter_v1_0/src"
+make -C microblaze_0/libsrc/counter_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling counter"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/dct_v1_0/src"
+make -C microblaze_0/libsrc/dct_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling dct"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+13:28:59 **** Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: dct_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size dct_perf.elf  |tee "dct_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	dct_perf.elf
+'Finished building: dct_perf.elf.size'
+' '
+13:30:39 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.
+13:31:24 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.
+13:38:50 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.
+13:39:14 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct.d" -MT"src/dct.o" -o "src/dct.o" "../src/dct.cpp"
+../src/dct.cpp:9:10: fatal error: ap_fixed.h: No such file or directory
+ #include <ap_fixed.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/dct.o] Error 1
+13:39:35 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct.d" -MT"src/dct.o" -o "src/dct.o" "../src/dct.cpp"
+../src/dct.cpp:20:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:21:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:22:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:23:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:24:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:25:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:26:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:27:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:29:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:30:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:31:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:32:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:33:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:34:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:35:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:36:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:38:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:39:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:40:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:41:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:42:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:43:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:44:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:45:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:47:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:48:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:49:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:50:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:51:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:52:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:53:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:54:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:56:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:57:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:58:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:59:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:60:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:61:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:62:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:63:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:65:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:66:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:67:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:68:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:69:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:70:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:71:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:72:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:74:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:75:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:76:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:77:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:78:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:79:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:80:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:81:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:83:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:84:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:85:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:86:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:87:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:88:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:89:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:90:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+'Finished building: ../src/dct.cpp'
+' '
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:19:2: error: 'ifstream' was not declared in this scope
+  ifstream inputFile,expOutputFIle;
+  ^~~~~~~~
+../src/dct_tb.cpp:19:2: note: suggested alternative: 'system'
+  ifstream inputFile,expOutputFIle;
+  ^~~~~~~~
+  system
+../src/dct_tb.cpp:20:2: error: 'ofstream' was not declared in this scope
+  ofstream outputFile;
+  ^~~~~~~~
+../src/dct_tb.cpp:20:2: note: suggested alternative: 'system'
+  ofstream outputFile;
+  ^~~~~~~~
+  system
+../src/dct_tb.cpp:23:2: error: 'inputFile' was not declared in this scope
+  inputFile.open("inputData.txt",ios::in);
+  ^~~~~~~~~
+../src/dct_tb.cpp:23:2: note: suggested alternative: 'inputRead'
+  inputFile.open("inputData.txt",ios::in);
+  ^~~~~~~~~
+  inputRead
+../src/dct_tb.cpp:23:33: error: 'ios' has not been declared
+  inputFile.open("inputData.txt",ios::in);
+                                 ^~~
+../src/dct_tb.cpp:33:2: error: 'expOutputFIle' was not declared in this scope
+  expOutputFIle.open("expectedOutputData.txt",ios::in);
+  ^~~~~~~~~~~~~
+../src/dct_tb.cpp:33:2: note: suggested alternative: 'expOutputRead'
+  expOutputFIle.open("expectedOutputData.txt",ios::in);
+  ^~~~~~~~~~~~~
+  expOutputRead
+../src/dct_tb.cpp:33:46: error: 'ios' has not been declared
+  expOutputFIle.open("expectedOutputData.txt",ios::in);
+                                              ^~~
+../src/dct_tb.cpp:38:4: error: 'cout' was not declared in this scope
+    cout << index << " - exp: " << expOutputRead << " - got: " << dataOut[index] << endl;
+    ^~~~
+../src/dct_tb.cpp:38:4: note: suggested alternative: 'cosl'
+    cout << index << " - exp: " << expOutputRead << " - got: " << dataOut[index] << endl;
+    ^~~~
+    cosl
+../src/dct_tb.cpp:38:84: error: 'endl' was not declared in this scope
+    cout << index << " - exp: " << expOutputRead << " - got: " << dataOut[index] << endl;
+                                                                                    ^~~~
+../src/dct_tb.cpp:38:84: note: suggested alternative: 'expl'
+    cout << index << " - exp: " << expOutputRead << " - got: " << dataOut[index] << endl;
+                                                                                    ^~~~
+                                                                                    expl
+../src/dct_tb.cpp:45:3: error: 'cout' was not declared in this scope
+   cout << "Pass" << endl;
+   ^~~~
+../src/dct_tb.cpp:45:3: note: suggested alternative: 'cosl'
+   cout << "Pass" << endl;
+   ^~~~
+   cosl
+../src/dct_tb.cpp:45:21: error: 'endl' was not declared in this scope
+   cout << "Pass" << endl;
+                     ^~~~
+../src/dct_tb.cpp:45:21: note: suggested alternative: 'expl'
+   cout << "Pass" << endl;
+                     ^~~~
+                     expl
+../src/dct_tb.cpp:47:3: error: 'cout' was not declared in this scope
+   cout << "Fail. " << errorCount << " output points are incorrect." << endl;
+   ^~~~
+../src/dct_tb.cpp:47:3: note: suggested alternative: 'cosl'
+   cout << "Fail. " << errorCount << " output points are incorrect." << endl;
+   ^~~~
+   cosl
+../src/dct_tb.cpp:47:72: error: 'endl' was not declared in this scope
+   cout << "Fail. " << errorCount << " output points are incorrect." << endl;
+                                                                        ^~~~
+../src/dct_tb.cpp:47:72: note: suggested alternative: 'expl'
+   cout << "Fail. " << errorCount << " output points are incorrect." << endl;
+                                                                        ^~~~
+                                                                        expl
+make: *** [src/dct_tb.o] Error 1
+13:40:12 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/main.cc:6: multiple definition of `main'
+./src/dct_tb.o:D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/dct_tb.cpp:12: first defined here
+f:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: dct_perf.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+f:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 414264 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [dct_perf.elf] Error 1
+14:05:16 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+In file included from ../src/dct_tb.cpp:33:0:
+../src/inputData.txt: In function 'int main()':
+../src/inputData.txt:2:1: error: expected '}' before numeric constant
+ 0.8358474279838033
+ ^~~~~~~~~~~~~~~~~~
+../src/inputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:20:8: warning: unused variable 'xdctptr' [-Wunused-variable]
+  XDct* xdctptr = &xdct;
+        ^~~~~~~
+../src/dct_tb.cpp:23:15: warning: unused variable 'xcptr' [-Wunused-variable]
+     XCounter* xcptr = &xc;
+               ^~~~~
+../src/dct_tb.cpp:25:9: warning: unused variable 'ctr' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+         ^~~
+../src/dct_tb.cpp:25:14: warning: unused variable 't1' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+              ^~
+../src/dct_tb.cpp:25:18: warning: unused variable 't2' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                  ^~
+../src/dct_tb.cpp:25:22: warning: unused variable 'ts' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                      ^~
+../src/dct_tb.cpp:26:9: warning: unused variable 't3' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+         ^~
+../src/dct_tb.cpp:26:13: warning: unused variable 't4' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+             ^~
+../src/dct_tb.cpp:26:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:26:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:26:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:28:11: warning: unused variable 'in' [-Wunused-variable]
+     dt_in in[SIZE];
+           ^~
+../src/dct_tb.cpp:29:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+../src/dct_tb.cpp:32:8: warning: unused variable 'dataIn' [-Wunused-variable]
+  dt_in dataIn[SIZE] = {
+        ^~~~~~
+In file included from ../src/dct_tb.cpp:39:0:
+../src/expectedOutputData.txt: At global scope:
+../src/expectedOutputData.txt:2:1: error: expected '}' before numeric constant
+ 0.6988577820179560
+ ^~~~~~~~~~~~~~~~~~
+../src/expectedOutputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:40:11: error: expected declaration before '}' token
+           };
+           ^
+make: *** [src/dct_tb.o] Error 1
+14:25:03 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp:17:32: error: 'dt_In' has not been declared
+ void writeToDCT(XDct* xdctptr, dt_In *dr)
+                                ^~~~~
+../src/dct_tb.cpp:22:33: error: 'dt_Out' has not been declared
+ void readFromDCT(XDct* xdctptr, dt_Out *dr)
+                                 ^~~~~~
+In file included from ../src/dct_tb.cpp:52:0:
+../src/inputData.txt: In function 'int main()':
+../src/inputData.txt:2:1: error: expected '}' before numeric constant
+ 0.8358474279838033
+ ^~~~~~~~~~~~~~~~~~
+../src/inputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:39:8: warning: unused variable 'xdctptr' [-Wunused-variable]
+  XDct* xdctptr = &xdct;
+        ^~~~~~~
+../src/dct_tb.cpp:42:15: warning: unused variable 'xcptr' [-Wunused-variable]
+     XCounter* xcptr = &xc;
+               ^~~~~
+../src/dct_tb.cpp:44:9: warning: unused variable 'ctr' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+         ^~~
+../src/dct_tb.cpp:44:14: warning: unused variable 't1' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+              ^~
+../src/dct_tb.cpp:44:18: warning: unused variable 't2' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                  ^~
+../src/dct_tb.cpp:44:22: warning: unused variable 'ts' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                      ^~
+../src/dct_tb.cpp:45:9: warning: unused variable 't3' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+         ^~
+../src/dct_tb.cpp:45:13: warning: unused variable 't4' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+             ^~
+../src/dct_tb.cpp:45:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:45:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:45:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:11: warning: unused variable 'in' [-Wunused-variable]
+     dt_in in[SIZE];
+           ^~
+../src/dct_tb.cpp:48:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+../src/dct_tb.cpp:51:8: warning: unused variable 'dataIn' [-Wunused-variable]
+  dt_in dataIn[SIZE] = {
+        ^~~~~~
+In file included from ../src/dct_tb.cpp:58:0:
+../src/expectedOutputData.txt: At global scope:
+../src/expectedOutputData.txt:2:1: error: expected '}' before numeric constant
+ 0.6988577820179560
+ ^~~~~~~~~~~~~~~~~~
+../src/expectedOutputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:59:11: error: expected declaration before '}' token
+           };
+           ^
+make: *** [src/dct_tb.o] Error 1
+14:25:46 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+In file included from ../src/dct_tb.cpp:52:0:
+../src/inputData.txt: In function 'int main()':
+../src/inputData.txt:2:1: error: expected '}' before numeric constant
+ 0.8358474279838033
+ ^~~~~~~~~~~~~~~~~~
+../src/inputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:39:8: warning: unused variable 'xdctptr' [-Wunused-variable]
+  XDct* xdctptr = &xdct;
+        ^~~~~~~
+../src/dct_tb.cpp:42:15: warning: unused variable 'xcptr' [-Wunused-variable]
+     XCounter* xcptr = &xc;
+               ^~~~~
+../src/dct_tb.cpp:44:9: warning: unused variable 'ctr' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+         ^~~
+../src/dct_tb.cpp:44:14: warning: unused variable 't1' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+              ^~
+../src/dct_tb.cpp:44:18: warning: unused variable 't2' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                  ^~
+../src/dct_tb.cpp:44:22: warning: unused variable 'ts' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                      ^~
+../src/dct_tb.cpp:45:9: warning: unused variable 't3' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+         ^~
+../src/dct_tb.cpp:45:13: warning: unused variable 't4' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+             ^~
+../src/dct_tb.cpp:45:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:45:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:45:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:11: warning: unused variable 'in' [-Wunused-variable]
+     dt_in in[SIZE];
+           ^~
+../src/dct_tb.cpp:48:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+../src/dct_tb.cpp:51:8: warning: unused variable 'dataIn' [-Wunused-variable]
+  dt_in dataIn[SIZE] = {
+        ^~~~~~
+In file included from ../src/dct_tb.cpp:58:0:
+../src/expectedOutputData.txt: At global scope:
+../src/expectedOutputData.txt:2:1: error: expected '}' before numeric constant
+ 0.6988577820179560
+ ^~~~~~~~~~~~~~~~~~
+../src/expectedOutputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:59:11: error: expected declaration before '}' token
+           };
+           ^
+make: *** [src/dct_tb.o] Error 1
+14:26:01 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+In file included from ../src/dct_tb.cpp:51:0:
+../src/inputData.txt: In function 'int main()':
+../src/inputData.txt:2:1: error: expected '}' before numeric constant
+ 0.8358474279838033
+ ^~~~~~~~~~~~~~~~~~
+../src/inputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:38:8: warning: unused variable 'xdctptr' [-Wunused-variable]
+  XDct* xdctptr = &xdct;
+        ^~~~~~~
+../src/dct_tb.cpp:41:15: warning: unused variable 'xcptr' [-Wunused-variable]
+     XCounter* xcptr = &xc;
+               ^~~~~
+../src/dct_tb.cpp:43:9: warning: unused variable 'ctr' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+         ^~~
+../src/dct_tb.cpp:43:14: warning: unused variable 't1' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+              ^~
+../src/dct_tb.cpp:43:18: warning: unused variable 't2' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                  ^~
+../src/dct_tb.cpp:43:22: warning: unused variable 'ts' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                      ^~
+../src/dct_tb.cpp:44:9: warning: unused variable 't3' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+         ^~
+../src/dct_tb.cpp:44:13: warning: unused variable 't4' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+             ^~
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:46:11: warning: unused variable 'in' [-Wunused-variable]
+     dt_in in[SIZE];
+           ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+../src/dct_tb.cpp:50:8: warning: unused variable 'dataIn' [-Wunused-variable]
+  dt_in dataIn[SIZE] = {
+        ^~~~~~
+In file included from ../src/dct_tb.cpp:57:0:
+../src/expectedOutputData.txt: At global scope:
+../src/expectedOutputData.txt:2:1: error: expected '}' before numeric constant
+ 0.6988577820179560
+ ^~~~~~~~~~~~~~~~~~
+../src/expectedOutputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:58:11: error: expected declaration before '}' token
+           };
+           ^
+make: *** [src/dct_tb.o] Error 1
+14:27:17 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+In file included from ../src/dct_tb.cpp:51:0:
+../src/inputData.txt: In function 'int main()':
+../src/inputData.txt:2:1: error: expected '}' before numeric constant
+ 0.8358474279838033
+ ^~~~~~~~~~~~~~~~~~
+../src/inputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:38:8: warning: unused variable 'xdctptr' [-Wunused-variable]
+  XDct* xdctptr = &xdct;
+        ^~~~~~~
+../src/dct_tb.cpp:41:15: warning: unused variable 'xcptr' [-Wunused-variable]
+     XCounter* xcptr = &xc;
+               ^~~~~
+../src/dct_tb.cpp:43:9: warning: unused variable 'ctr' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+         ^~~
+../src/dct_tb.cpp:43:14: warning: unused variable 't1' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+              ^~
+../src/dct_tb.cpp:43:18: warning: unused variable 't2' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                  ^~
+../src/dct_tb.cpp:43:22: warning: unused variable 'ts' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                      ^~
+../src/dct_tb.cpp:44:9: warning: unused variable 't3' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+         ^~
+../src/dct_tb.cpp:44:13: warning: unused variable 't4' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+             ^~
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:46:11: warning: unused variable 'in' [-Wunused-variable]
+     dt_in in[SIZE];
+           ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+../src/dct_tb.cpp:50:8: warning: unused variable 'dataIn' [-Wunused-variable]
+  dt_in dataIn[SIZE] = {
+        ^~~~~~
+In file included from ../src/dct_tb.cpp:57:0:
+../src/expectedOutputData.txt: At global scope:
+../src/expectedOutputData.txt:2:1: error: expected '}' before numeric constant
+ 0.6988577820179560
+ ^~~~~~~~~~~~~~~~~~
+../src/expectedOutputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:58:11: error: expected declaration before '}' token
+           };
+           ^
+make: *** [src/dct_tb.o] Error 1
+14:31:10 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+In file included from ../src/dct_tb.cpp:51:0:
+../src/inputData.txt: In function 'int main()':
+../src/inputData.txt:2:1: error: expected '}' before numeric constant
+ 0.8358474279838033
+ ^~~~~~~~~~~~~~~~~~
+../src/inputData.txt:2:1: error: expected ',' or ';' before numeric constant
+../src/dct_tb.cpp:38:8: warning: unused variable 'xdctptr' [-Wunused-variable]
+  XDct* xdctptr = &xdct;
+        ^~~~~~~
+../src/dct_tb.cpp:41:15: warning: unused variable 'xcptr' [-Wunused-variable]
+     XCounter* xcptr = &xc;
+               ^~~~~
+../src/dct_tb.cpp:43:9: warning: unused variable 'ctr' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+         ^~~
+../src/dct_tb.cpp:43:14: warning: unused variable 't1' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+              ^~
+../src/dct_tb.cpp:43:18: warning: unused variable 't2' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                  ^~
+../src/dct_tb.cpp:43:22: warning: unused variable 'ts' [-Wunused-variable]
+     int ctr, t1, t2, ts;
+                      ^~
+../src/dct_tb.cpp:44:9: warning: unused variable 't3' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+         ^~
+../src/dct_tb.cpp:44:13: warning: unused variable 't4' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+             ^~
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:46:11: warning: unused variable 'in' [-Wunused-variable]
+     dt_in in[SIZE];
+           ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+../src/dct_tb.cpp:50:8: warning: unused variable 'dataIn' [-Wunused-variable]
+  dt_in dataIn[SIZE] = {
+        ^~~~~~
+../src/dct_tb.cpp: At global scope:
+../src/dct_tb.cpp:60:2: error: expected unqualified-id before 'for'
+  for(int i=0; i<SIZE; i++)
+  ^~~
+../src/dct_tb.cpp:60:15: error: 'i' does not name a type
+  for(int i=0; i<SIZE; i++)
+               ^
+../src/dct_tb.cpp:60:23: error: 'i' does not name a type
+  for(int i=0; i<SIZE; i++)
+                       ^
+../src/dct_tb.cpp:66:17: error: expected constructor, destructor, or type conversion before '(' token
+  XDct_Initialize(xdctptr, 0);
+                 ^
+../src/dct_tb.cpp:67:21: error: expected constructor, destructor, or type conversion before '(' token
+  XCounter_Initialize(xcptr, 0);
+                     ^
+../src/dct_tb.cpp:68:31: error: expected constructor, destructor, or type conversion before '(' token
+     XCounter_EnableAutoRestart(xcptr);
+                               ^
+../src/dct_tb.cpp:69:16: error: expected constructor, destructor, or type conversion before '(' token
+  XCounter_Start(xcptr);
+                ^
+../src/dct_tb.cpp:77:2: error: 't1' does not name a type; did you mean 'y1'?
+  t1 = XCounter_Get_return(xcptr);
+  ^~
+  y1
+../src/dct_tb.cpp:78:5: error: expected constructor, destructor, or type conversion before '(' token
+  dct(dataIn, dataOut);
+     ^
+../src/dct_tb.cpp:79:2: error: 't2' does not name a type
+  t2 = XCounter_Get_return(xcptr);
+  ^~
+../src/dct_tb.cpp:80:2: error: 'ts' does not name a type
+  ts = t2-t1;
+  ^~
+../src/dct_tb.cpp:82:2: error: expected unqualified-id before 'for'
+  for(int k=0;k<SIZE;k++){
+  ^~~
+../src/dct_tb.cpp:82:14: error: 'k' does not name a type
+  for(int k=0;k<SIZE;k++){
+              ^
+../src/dct_tb.cpp:82:21: error: 'k' does not name a type
+  for(int k=0;k<SIZE;k++){
+                     ^
+../src/dct_tb.cpp:93:2: error: 't1' does not name a type; did you mean 'y1'?
+  t1 = XCounter_Get_return(xcptr);
+  ^~
+  y1
+../src/dct_tb.cpp:94:12: error: expected constructor, destructor, or type conversion before '(' token
+  writeToDCT(xdctptr, in);
+            ^
+../src/dct_tb.cpp:95:2: error: 't2' does not name a type
+  t2 = XCounter_Get_return(xcptr);
+  ^~
+../src/dct_tb.cpp:97:12: error: expected constructor, destructor, or type conversion before '(' token
+  XDct_Start(xdctptr);
+            ^
+../src/dct_tb.cpp:99:2: error: expected unqualified-id before 'while'
+  while(!XDct_IsDone(xdctptr) && (ctr < 1000)) ctr++;
+  ^~~~~
+../src/dct_tb.cpp:100:3: error: expected unqualified-id before 'if'
+   if(ctr ==1000) {
+   ^~
+../src/dct_tb.cpp:102:5: error: expected unqualified-id before 'else'
+   } else {
+     ^~~~
+../src/dct_tb.cpp:106:2: error: 't3' does not name a type
+  t3 = XCounter_Get_return(xcptr);
+  ^~
+../src/dct_tb.cpp:107:13: error: expected constructor, destructor, or type conversion before '(' token
+  readFromDCT(xdctptr, dataOut);
+             ^
+../src/dct_tb.cpp:108:2: error: 't4' does not name a type
+  t4 = XCounter_Get_return(xcptr);
+  ^~
+../src/dct_tb.cpp:110:4: error: expected unqualified-id before 'for'
+    for(int k=0;k<SIZE;k++){
+    ^~~
+../src/dct_tb.cpp:110:16: error: 'k' does not name a type
+    for(int k=0;k<SIZE;k++){
+                ^
+../src/dct_tb.cpp:110:23: error: 'k' does not name a type
+    for(int k=0;k<SIZE;k++){
+                       ^
+../src/dct_tb.cpp:122:2: error: expected unqualified-id before 'if'
+  if (result != 0) {
+  ^~
+../src/dct_tb.cpp:124:4: error: expected unqualified-id before 'else'
+  } else if (hwres != 0) {
+    ^~~~
+../src/dct_tb.cpp:126:4: error: expected unqualified-id before 'else'
+  } else {
+    ^~~~
+../src/dct_tb.cpp:130:12: error: expected constructor, destructor, or type conversion before '(' token
+  xil_printf("SW DCT cycles: %d\r\n", ts);
+            ^
+../src/dct_tb.cpp:131:12: error: expected constructor, destructor, or type conversion before '(' token
+  xil_printf("Write cycles: %d\r\n", t2-t1);
+            ^
+../src/dct_tb.cpp:132:12: error: expected constructor, destructor, or type conversion before '(' token
+  xil_printf("Compute cycles: %d\r\n", t3-t2);
+            ^
+../src/dct_tb.cpp:133:12: error: expected constructor, destructor, or type conversion before '(' token
+  xil_printf("Read cycles: %d\r\n", t4-t3);
+            ^
+../src/dct_tb.cpp:135:2: error: expected unqualified-id before 'return'
+  return result + hwres;
+  ^~~~~~
+../src/dct_tb.cpp:136:1: error: expected declaration before '}' token
+ }
+ ^
+make: *** [src/dct_tb.o] Error 1
+14:31:59 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:14:29: error: request for member 'real' in '((exp_out[k] - dataOut[k]) * (exp_out[k] - dataOut[k]))', which is of non-class type 'dt_out {aka float}'
+ #define NORM(x) ((x) * (x)).real()
+                             ^
+../src/dct_tb.cpp:83:7: note: in expansion of macro 'NORM'
+    if(NORM(exp_out[k]-dataOut[k])>TOL) {
+       ^~~~
+../src/dct_tb.cpp:14:29: error: request for member 'real' in '((exp_out[k] - dataOut[k]) * (exp_out[k] - dataOut[k]))', which is of non-class type 'dt_out {aka float}'
+ #define NORM(x) ((x) * (x)).real()
+                             ^
+../src/dct_tb.cpp:111:9: note: in expansion of macro 'NORM'
+      if(NORM(exp_out[k]-dataOut[k])>TOL) {
+         ^~~~
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+make: *** [src/dct_tb.o] Error 1
+14:32:26 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/main.cc:6: multiple definition of `main'
+./src/dct_tb.o:D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/dct_tb.cpp:36: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [dct_perf.elf] Error 1
+14:33:49 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/main.cc:6: multiple definition of `main'
+./src/dct_tb.o:D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/dct_tb.cpp:36: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [dct_perf.elf] Error 1
+14:33:58 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/main.cc:6: multiple definition of `main'
+./src/dct_tb.o:D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/dct_tb.cpp:36: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [dct_perf.elf] Error 1
+14:35:26 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/main.cc:6: multiple definition of `main'
+./src/dct_tb.o:D:\1_EE5332\assignment_3\perf_ctr\perf_ctr.sdk\dct_perf\Debug/../src/dct_tb.cpp:36: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [dct_perf.elf] Error 1
+14:35:42 **** Clean-only build of configuration Debug for project dct_perf ****
+make clean 
+rm -rf  ./src/main.d  ./src/dct.o ./src/dct_tb.o ./src/main.o  ./src/dct.d ./src/dct_tb.d  dct_perf.elf.size  dct_perf.elf
+' '
+14:35:43 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct.d" -MT"src/dct.o" -o "src/dct.o" "../src/dct.cpp"
+../src/dct.cpp:20:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:21:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:22:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:23:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:24:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:25:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:26:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:27:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:29:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:30:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:31:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:32:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:33:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:34:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:35:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:36:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:38:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:39:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:40:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:41:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:42:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:43:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:44:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:45:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:47:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:48:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:49:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:50:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:51:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:52:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:53:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:54:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:56:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:57:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:58:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:59:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:60:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:61:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:62:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:63:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:65:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:66:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:67:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:68:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:69:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:70:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:71:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:72:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:74:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:75:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:76:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:77:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:78:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:79:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:80:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:81:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:83:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:84:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:85:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:86:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:87:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:88:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:89:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/dct.cpp:90:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+'Finished building: ../src/dct.cpp'
+' '
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: dct_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size dct_perf.elf  |tee "dct_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28584	    552	   3112	  32248	   7df8	dct_perf.elf
+'Finished building: dct_perf.elf.size'
+' '
+14:35:54 **** Incremental Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.
+14:37:34 **** Incremental Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.
+14:38:44 **** Auto Build of configuration Debug for project dct_perf ****
+make all 
+'Building file: ../src/dct_tb.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dct_tb.o" -I../../dct_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dct_tb.d" -MT"src/dct_tb.o" -o "src/dct_tb.o" "../src/dct_tb.cpp"
+../src/dct_tb.cpp: In function 'int main()':
+../src/dct_tb.cpp:44:17: warning: unused variable 'tw' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                 ^~
+../src/dct_tb.cpp:44:21: warning: unused variable 'th' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                     ^~
+../src/dct_tb.cpp:44:25: warning: unused variable 'tr' [-Wunused-variable]
+     int t3, t4, tw, th, tr;
+                         ^~
+../src/dct_tb.cpp:47:12: warning: unused variable 'out' [-Wunused-variable]
+     dt_out out[SIZE];
+            ^~~
+'Finished building: ../src/dct_tb.cpp'
+' '
+'Building target: dct_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dct_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dct_perf.elf"  ./src/dct.o ./src/dct_tb.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: dct_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size dct_perf.elf  |tee "dct_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28584	    552	   3112	  32248	   7df8	dct_perf.elf
+'Finished building: dct_perf.elf.size'
+' '
+14:39:02 **** Incremental Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.
+14:39:56 **** Incremental Build of configuration Debug for project dct_perf ****
+make all 
+make: Nothing to be done for `all'.

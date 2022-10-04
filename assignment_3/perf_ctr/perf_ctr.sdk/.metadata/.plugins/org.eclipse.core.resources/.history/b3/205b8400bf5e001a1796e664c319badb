@@ -1,0 +1,94 @@
+//Course		: EE5332-2020
+//Name			: 64 point DCT Test bench.
+//Description	: Takes in an input of size 64 points and gives
+//					64 points as output.
+//Author		: Jithendra K 
+
+#include <iostream>
+#include <fstream>
+
+#include "dct.h"
+
+#include "xcounter.h"
+#include "xdct.h"
+
+#define NORM(x) ((x) * (x)).real()
+
+int main()
+{
+	XDct xdct;
+	XDct* xdctptr = &xdct;
+
+	XCounter xc;
+    XCounter* xcptr = &xc;
+
+    int ctr, t1, t2, ts;
+    int t3, t4, tw, th, tr;
+
+    dt_in in[SIZE];
+    dt_out out[SIZE];
+
+
+	dt_in dataIn[SIZE] = {
+			#include "inputData.txt"
+			};
+
+	dt_out dataOut[SIZE];
+
+	dt_out exp_out[SIZE] = {
+             #include "expectedOutputData.txt"
+	         };
+
+	for(int i=0; i<SIZE; i++)
+	    {
+	    	in[i] = dataIn[i];
+	    }
+
+//	dt_in inputRead;
+//	dt_out expOutputRead;
+	int errorCount;
+
+	//ifstream inputFile,expOutputFIle;
+	//ofstream outputFile;
+
+	//Read Input Data
+//	inputFile.open("inputData.txt",ios::in);
+//	for(int index = 0; index < SIZE; index++) {
+//		inputFile >> inputRead ;
+//		dataIn[index] = inputRead;
+//	}
+	XDct_Initialize(xdctptr, 0);
+	XCounter_Initialize(xcptr, 0);
+    XCounter_EnableAutoRestart(xcptr);
+	XCounter_Start(xcptr);
+
+	int result = 0;
+	int hwres = 0;
+
+
+
+	//Perform DCT operation
+	t1 = XCounter_Get_return(xcptr);
+	dct(dataIn, dataOut);
+	t2 = XCounter_Get_return(xcptr);
+	ts = t2-t1;
+
+	//Read Expected Output Data and and evaluate the actual output
+	expOutputFIle.open("expectedOutputData.txt",ios::in);
+	errorCount = 0;
+	for(int index = 0; index < SIZE; index++) {
+		expOutputFIle >> expOutputRead ;
+		if(abs((float)(dataOut[index]- expOutputRead) > TOL )) {
+			cout << index << " - exp: " << expOutputRead << " - got: " << dataOut[index] << endl;
+			errorCount++;
+		} 
+	}
+
+	//Display pass or fail
+	if(errorCount == 0) {
+		cout << "Pass" << endl;
+	} else {
+		cout << "Fail. " << errorCount << " output points are incorrect." << endl;
+	}
+	return errorCount;
+}

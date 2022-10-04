@@ -1,0 +1,227 @@
+INFO: [HLS 200-10] Running 'F:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'ajayk' on host 'laptop-bkt11voi' (Windows NT_amd64 version 6.2) on Mon Mar 09 12:45:19 +0530 2020
+INFO: [HLS 200-10] In directory 'D:/1_EE5332/assignment_3'
+INFO: [HLS 200-10] Opening project 'D:/1_EE5332/assignment_3/dct'.
+INFO: [HLS 200-10] Opening solution 'D:/1_EE5332/assignment_3/dct/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35tcpg236-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/dct.cpp in debug mode
+   Generating csim.exe
+In file included from F:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from F:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
+                 from F:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from F:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from F:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+                 from F:/Xilinx/Vivado/2018.2/include/ap_fixed.h:57,
+                 from ../../../../src/dct.h:5,
+                 from ../../../../src/dct.cpp:7:
+F:/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from F:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
+                 from F:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from F:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from F:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+                 from F:/Xilinx/Vivado/2018.2/include/ap_fixed.h:57,
+                 from ../../../../src/dct.h:5,
+                 from ../../../../src/dct.cpp:7:
+F:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../../src/dct.cpp:20:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:21:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:22:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:23:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:24:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:25:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:26:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:27:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)0)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*0) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:29:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:30:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:31:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:32:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:33:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:34:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:35:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:36:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)1)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*1) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:38:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:39:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:40:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:41:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:42:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:43:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:44:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:45:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)2)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*2) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:47:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:48:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:49:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:50:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:51:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:52:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:53:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:54:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)3)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*3) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:56:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:57:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:58:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:59:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:60:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:61:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:62:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:63:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)4)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*4) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:65:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:66:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:67:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:68:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:69:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:70:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:71:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:72:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)5)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*5) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:74:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:75:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:76:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:77:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:78:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:79:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:80:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:81:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)6)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*6) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:83:31: warning: narrowing conversion of '(cos((((double)(2 * 0 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*0+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:84:31: warning: narrowing conversion of '(cos((((double)(2 * 1 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*1+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:85:31: warning: narrowing conversion of '(cos((((double)(2 * 2 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*2+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:86:31: warning: narrowing conversion of '(cos((((double)(2 * 3 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*3+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:87:31: warning: narrowing conversion of '(cos((((double)(2 * 4 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*4+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:88:31: warning: narrowing conversion of '(cos((((double)(2 * 5 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*5+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:89:31: warning: narrowing conversion of '(cos((((double)(2 * 6 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*6+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../../../../src/dct.cpp:90:31: warning: narrowing conversion of '(cos((((double)(2 * 7 + 1) * (3.1400000000000001e+0 / ((__gnu_cxx::__enable_if<true, double>::__type)2 * std::sqrt<int>(64)))) * (double)7)) * ((double)((float)scale)))' from 'double' to 'float' inside { } [-Wnarrowing]
+   cos((2*7+1)*(3.14/(2*N))*7) * scale,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+Pass
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

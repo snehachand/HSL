@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar  5 13:10:34 2020
+# Process ID: 8140
+# Current directory: D:/1_EE5332/assignment_3/perf_ctr/perf_ctr.runs/mb_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log mb_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_ilmb_v10_0.tcl
+# Log file: D:/1_EE5332/assignment_3/perf_ctr/perf_ctr.runs/mb_ilmb_v10_0_synth_1/mb_ilmb_v10_0.vds
+# Journal file: D:/1_EE5332/assignment_3/perf_ctr/perf_ctr.runs/mb_ilmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mb_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 324.531 ; gain = 92.797
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mb_ilmb_v10_0, cache-ID = b5ebec500d0bba4c.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 13:10:58 2020...

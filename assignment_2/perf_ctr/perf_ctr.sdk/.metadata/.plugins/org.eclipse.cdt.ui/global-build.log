@@ -1,0 +1,383 @@
+09:21:29 **** Build of project fft_perf_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/counter_v1_0/src"
+make -C microblaze_0/libsrc/counter_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/FFT_v1_0/src"
+make -C microblaze_0/libsrc/FFT_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/counter_v1_0/src"
+make -C microblaze_0/libsrc/counter_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling counter"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/FFT_v1_0/src"
+make -C microblaze_0/libsrc/FFT_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling FFT"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:21:49 **** Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../fft_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fft_perf.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size fft_perf.elf  |tee "fft_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	fft_perf.elf
+'Finished building: fft_perf.elf.size'
+' '
+09:23:01 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:23:07 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:30:01 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:30:56 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:33:36 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:33:43 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:35:11 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:37:03 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:41:06 **** Build of project helloworld_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/counter_v1_0/src"
+make -C microblaze_0/libsrc/counter_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/FFT_v1_0/src"
+make -C microblaze_0/libsrc/FFT_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/counter_v1_0/src"
+make -C microblaze_0/libsrc/counter_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling counter"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/FFT_v1_0/src"
+make -C microblaze_0/libsrc/FFT_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling FFT"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:41:24 **** Build of configuration Debug for project helloworld ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../helloworld_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../helloworld_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+09:41:48 **** Incremental Build of configuration Debug for project helloworld ****
+make all 
+make: Nothing to be done for `all'.
+09:43:31 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+09:43:32 **** Incremental Build of configuration Debug for project helloworld ****
+make all 
+make: Nothing to be done for `all'.
+10:14:31 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/fft.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fft.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/fft.d" -MT"src/fft.o" -o "src/fft.o" "../src/fft.cpp"
+../src/fft.cpp: In function 'void bitreverse(data_comp*, data_comp*)':
+../src/fft.cpp:17:2: warning: label 'bitreversal_label1' defined but not used [-Wunused-label]
+  bitreversal_label1: for (int i=0;i<N;i++) {
+  ^~~~~~~~~~~~~~~~~~
+../src/fft.cpp: In function 'void FFT0(int, int, int, int, data_comp*, data_comp*)':
+../src/fft.cpp:26:2: warning: label 'FFT_label1' defined but not used [-Wunused-label]
+  FFT_label1: for (int i = 0; i < N/2; i++) {
+  ^~~~~~~~~~
+'Finished building: ../src/fft.cpp'
+' '
+'Building target: fft_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../fft_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fft_perf.elf"  ./src/fft.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size fft_perf.elf  |tee "fft_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22292	    284	   4400	  26976	   6960	fft_perf.elf
+'Finished building: fft_perf.elf.size'
+' '
+10:16:14 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:35:8: warning: unused variable 'xfptr' [-Wunused-variable]
+  XFft* xfptr = &xf;
+        ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../fft_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fft_perf.elf"  ./src/fft.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size fft_perf.elf  |tee "fft_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22300	    284	   4400	  26984	   6968	fft_perf.elf
+'Finished building: fft_perf.elf.size'
+' '
+10:48:26 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:70:6: error: redeclaration of 'int t1'
+  int t1 = XCounter_Get_return(xcptr);
+      ^~
+../src/main.cc:39:11: note: 'int t1' previously declared here
+  int ctr, t1, t2, ts;
+           ^~
+../src/main.cc:72:6: error: redeclaration of 'int t2'
+  int t2 = XCounter_Get_return(xcptr);
+      ^~
+../src/main.cc:39:15: note: 'int t2' previously declared here
+  int ctr, t1, t2, ts;
+               ^~
+../src/main.cc:89:2: error: 'xFft_Start' was not declared in this scope
+  xFft_Start(xfptr);
+  ^~~~~~~~~~
+../src/main.cc:89:2: note: suggested alternative: 'XFft_Start'
+  xFft_Start(xfptr);
+  ^~~~~~~~~~
+  XFft_Start
+../src/main.cc:40:6: warning: unused variable 't3' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+      ^~
+../src/main.cc:40:9: warning: unused variable 't4' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+         ^~
+../src/main.cc:40:12: warning: unused variable 'tw' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+            ^~
+../src/main.cc:40:15: warning: unused variable 'th' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+               ^~
+../src/main.cc:40:18: warning: unused variable 'tr' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+                  ^~
+../src/main.cc:43:8: warning: unused variable 'out_r' [-Wunused-variable]
+  float out_r[32], out_i[32];
+        ^~~~~
+../src/main.cc:43:19: warning: unused variable 'out_i' [-Wunused-variable]
+  float out_r[32], out_i[32];
+                   ^~~~~
+../src/main.cc:68:6: warning: unused variable 'hwres' [-Wunused-variable]
+  int hwres = 0;
+      ^~~~~
+make: *** [src/main.o] Error 1
+10:48:54 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:70:6: error: redeclaration of 'int t1'
+  int t1 = XCounter_Get_return(xcptr);
+      ^~
+../src/main.cc:39:11: note: 'int t1' previously declared here
+  int ctr, t1, t2, ts;
+           ^~
+../src/main.cc:72:6: error: redeclaration of 'int t2'
+  int t2 = XCounter_Get_return(xcptr);
+      ^~
+../src/main.cc:39:15: note: 'int t2' previously declared here
+  int ctr, t1, t2, ts;
+               ^~
+../src/main.cc:40:6: warning: unused variable 't3' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+      ^~
+../src/main.cc:40:9: warning: unused variable 't4' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+         ^~
+../src/main.cc:40:12: warning: unused variable 'tw' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+            ^~
+../src/main.cc:40:15: warning: unused variable 'th' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+               ^~
+../src/main.cc:40:18: warning: unused variable 'tr' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+                  ^~
+../src/main.cc:43:8: warning: unused variable 'out_r' [-Wunused-variable]
+  float out_r[32], out_i[32];
+        ^~~~~
+../src/main.cc:43:19: warning: unused variable 'out_i' [-Wunused-variable]
+  float out_r[32], out_i[32];
+                   ^~~~~
+../src/main.cc:68:6: warning: unused variable 'hwres' [-Wunused-variable]
+  int hwres = 0;
+      ^~~~~
+make: *** [src/main.o] Error 1
+10:49:28 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:39:19: warning: variable 'ts' set but not used [-Wunused-but-set-variable]
+  int ctr, t1, t2, ts;
+                   ^~
+../src/main.cc:40:6: warning: unused variable 't3' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+      ^~
+../src/main.cc:40:9: warning: unused variable 't4' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+         ^~
+../src/main.cc:40:12: warning: unused variable 'tw' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+            ^~
+../src/main.cc:40:15: warning: unused variable 'th' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+               ^~
+../src/main.cc:40:18: warning: unused variable 'tr' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+                  ^~
+../src/main.cc:43:8: warning: unused variable 'out_r' [-Wunused-variable]
+  float out_r[32], out_i[32];
+        ^~~~~
+../src/main.cc:43:19: warning: unused variable 'out_i' [-Wunused-variable]
+  float out_r[32], out_i[32];
+                   ^~~~~
+../src/main.cc:68:6: warning: unused variable 'hwres' [-Wunused-variable]
+  int hwres = 0;
+      ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../fft_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fft_perf.elf"  ./src/fft.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size fft_perf.elf  |tee "fft_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24036	    292	   4400	  28728	   7038	fft_perf.elf
+'Finished building: fft_perf.elf.size'
+' '
+10:55:51 **** Auto Build of configuration Debug for project fft_perf ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../fft_perf_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:40:12: warning: unused variable 'tw' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+            ^~
+../src/main.cc:40:15: warning: unused variable 'th' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+               ^~
+../src/main.cc:40:18: warning: unused variable 'tr' [-Wunused-variable]
+  int t3,t4,tw,th,tr;
+                  ^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: fft_perf.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../fft_perf_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fft_perf.elf"  ./src/fft.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: fft_perf.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size fft_perf.elf  |tee "fft_perf.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25492	    292	   4400	  30184	   75e8	fft_perf.elf
+'Finished building: fft_perf.elf.size'
+' '
+10:57:20 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+14:00:55 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+14:02:05 **** Incremental Build of configuration Debug for project helloworld ****
+make all 
+make: Nothing to be done for `all'.
+14:02:46 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.
+14:23:14 **** Incremental Build of configuration Debug for project fft_perf ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,246 @@
+
+
+================================================================
+== Vivado HLS Report for 'FFT0'
+================================================================
+* Date:           Mon Feb 17 15:34:27 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        fft32
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|    10.779|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   81|   81|   81|   81|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+-----+-----+----------+-----------+-----------+------+----------+
+        |              |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- FFT_label1  |   80|   80|         5|          -|          -|    16|    no    |
+        +--------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	2  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.78>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%pass_shift_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %pass_shift)"   --->   Operation 7 'read' 'pass_shift_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%index_shift_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %index_shift)"   --->   Operation 8 'read' 'index_shift_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%pass_check_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %pass_check)"   --->   Operation 9 'read' 'pass_check_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%FFT_stage_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %FFT_stage)"   --->   Operation 10 'read' 'FFT_stage_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%pass_shift_cast = zext i4 %pass_shift_read to i32"   --->   Operation 11 'zext' 'pass_shift_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%index_shift_cast = zext i4 %index_shift_read to i32"   --->   Operation 12 'zext' 'index_shift_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%FFT_stage_cast1 = zext i6 %FFT_stage_read to i32"   --->   Operation 13 'zext' 'FFT_stage_cast1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_11 = trunc i6 %FFT_stage_read to i5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 14 'trunc' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.78ns)   --->   "%tmp = add i5 -1, %tmp_11" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 15 'add' 'tmp' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_cast = zext i5 %tmp to i32" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 16 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_12 = trunc i6 %pass_check_read to i5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:35]   --->   Operation 17 'trunc' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.78ns)   --->   "%tmp_s = add i5 -1, %tmp_12" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:35]   --->   Operation 18 'add' 'tmp_s' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_cast_11 = zext i5 %tmp_s to i32" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:35]   --->   Operation 19 'zext' 'tmp_cast_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.76ns)   --->   "br label %1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:26]   --->   Operation 20 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 7.67>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%butterfly_span = phi i32 [ 0, %0 ], [ %butterfly_span_2, %_ifconv ]" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 21 'phi' 'butterfly_span' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%butterfly_pass = phi i32 [ 0, %0 ], [ %butterfly_pass_2, %_ifconv ]"   --->   Operation 22 'phi' 'butterfly_pass' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%i = phi i5 [ 0, %0 ], [ %i_1, %_ifconv ]"   --->   Operation 23 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (1.36ns)   --->   "%exitcond = icmp eq i5 %i, -16" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:26]   --->   Operation 24 'icmp' 'exitcond' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16)"   --->   Operation 25 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (1.78ns)   --->   "%i_1 = add i5 %i, 1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:26]   --->   Operation 26 'add' 'i_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %2, label %_ifconv" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:26]   --->   Operation 27 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (4.42ns)   --->   "%index = shl i32 %butterfly_span, %index_shift_cast" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:27]   --->   Operation 28 'shl' 'index' <Predicate = (!exitcond)> <Delay = 4.42> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node Ulimit)   --->   "%tmp_2 = shl i32 %butterfly_pass, %pass_shift_cast" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:28]   --->   Operation 29 'shl' 'tmp_2' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (4.42ns) (out node of the LUT)   --->   "%Ulimit = add nsw i32 %tmp_2, %butterfly_span" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:28]   --->   Operation 30 'add' 'Ulimit' <Predicate = (!exitcond)> <Delay = 4.42> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_3 = sext i32 %index to i64" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 31 'sext' 'tmp_3' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%W_M_real_V_addr = getelementptr [16 x i10]* @W_M_real_V, i64 0, i64 %tmp_3" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 32 'getelementptr' 'W_M_real_V_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%W_M_imag_V_addr = getelementptr [16 x i9]* @W_M_imag_V, i64 0, i64 %tmp_3" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 33 'getelementptr' 'W_M_imag_V_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 34 [2/2] (3.25ns)   --->   "%p_r_M_real_V = load i10* %W_M_real_V_addr, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 34 'load' 'p_r_M_real_V' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 9> <Depth = 16> <ROM>
+ST_2 : Operation 35 [2/2] (3.25ns)   --->   "%p_r_M_imag_V = load i9* %W_M_imag_V_addr, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 35 'load' 'p_r_M_imag_V' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 9> <Depth = 16> <ROM>
+ST_2 : Operation 36 [1/1] (2.47ns)   --->   "%tmp_6 = icmp slt i32 %butterfly_span, %tmp_cast" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 36 'icmp' 'tmp_6' <Predicate = (!exitcond)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (2.55ns)   --->   "%butterfly_span_1 = add nsw i32 %butterfly_span, 1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:34]   --->   Operation 37 'add' 'butterfly_span_1' <Predicate = (!exitcond)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (2.47ns)   --->   "%tmp_7 = icmp slt i32 %butterfly_pass, %tmp_cast_11" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:35]   --->   Operation 38 'icmp' 'tmp_7' <Predicate = (!exitcond)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (2.55ns)   --->   "%butterfly_pass_3 = add nsw i32 %butterfly_pass, 1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:36]   --->   Operation 39 'add' 'butterfly_pass_3' <Predicate = (!exitcond)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node butterfly_pass_2)   --->   "%butterfly_pass_1 = select i1 %tmp_7, i32 %butterfly_pass_3, i32 0" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:35]   --->   Operation 40 'select' 'butterfly_pass_1' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.69ns)   --->   "%butterfly_span_2 = select i1 %tmp_6, i32 %butterfly_span_1, i32 0" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 41 'select' 'butterfly_span_2' <Predicate = (!exitcond)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (0.69ns) (out node of the LUT)   --->   "%butterfly_pass_2 = select i1 %tmp_6, i32 %butterfly_pass, i32 %butterfly_pass_1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33]   --->   Operation 42 'select' 'butterfly_pass_2' <Predicate = (!exitcond)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "ret void" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:41]   --->   Operation 43 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.87>
+ST_3 : Operation 44 [1/1] (2.55ns)   --->   "%Llimit = add nsw i32 %Ulimit, %FFT_stage_cast1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:29]   --->   Operation 44 'add' 'Llimit' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_4 = sext i32 %Llimit to i64" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 45 'sext' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%data_IN_M_real_V_ad = getelementptr [32 x i16]* %data_IN_M_real_V, i64 0, i64 %tmp_4" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 46 'getelementptr' 'data_IN_M_real_V_ad' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%data_IN_M_imag_V_ad = getelementptr [32 x i16]* %data_IN_M_imag_V, i64 0, i64 %tmp_4" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 47 'getelementptr' 'data_IN_M_imag_V_ad' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/2] (3.25ns)   --->   "%p_r_M_real_V = load i10* %W_M_real_V_addr, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 48 'load' 'p_r_M_real_V' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 9> <Depth = 16> <ROM>
+ST_3 : Operation 49 [1/2] (3.25ns)   --->   "%p_r_M_imag_V = load i9* %W_M_imag_V_addr, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 49 'load' 'p_r_M_imag_V' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 9> <Depth = 16> <ROM>
+ST_3 : Operation 50 [2/2] (2.32ns)   --->   "%data_IN_M_real_V_lo = load i16* %data_IN_M_real_V_ad, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 50 'load' 'data_IN_M_real_V_lo' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 51 [2/2] (2.32ns)   --->   "%data_IN_M_imag_V_lo = load i16* %data_IN_M_imag_V_ad, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 51 'load' 'data_IN_M_imag_V_lo' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+
+State 4 <SV = 3> <Delay = 8.70>
+ST_4 : Operation 52 [1/2] (2.32ns)   --->   "%data_IN_M_real_V_lo = load i16* %data_IN_M_real_V_ad, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 52 'load' 'data_IN_M_real_V_lo' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_4 : Operation 53 [1/2] (2.32ns)   --->   "%data_IN_M_imag_V_lo = load i16* %data_IN_M_imag_V_ad, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 53 'load' 'data_IN_M_imag_V_lo' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_1 = sext i16 %data_IN_M_real_V_lo to i24" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 54 'sext' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_8 = sext i10 %p_r_M_real_V to i24" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 55 'sext' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_9 = sext i16 %data_IN_M_imag_V_lo to i24" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 56 'sext' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (6.38ns)   --->   "%tmp1_i_i_cast = mul i24 %tmp_1, %tmp_8" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 57 'mul' 'tmp1_i_i_cast' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 58 [1/1] (6.38ns)   --->   "%tmp_i_i_cast = mul i24 %tmp_9, %tmp_8" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 58 'mul' 'tmp_i_i_cast' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%tmp_5 = sext i32 %Ulimit to i64" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 59 'sext' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%data_IN_M_real_V_ad_1 = getelementptr [32 x i16]* %data_IN_M_real_V, i64 0, i64 %tmp_5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 60 'getelementptr' 'data_IN_M_real_V_ad_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%data_IN_M_imag_V_ad_1 = getelementptr [32 x i16]* %data_IN_M_imag_V, i64 0, i64 %tmp_5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 61 'getelementptr' 'data_IN_M_imag_V_ad_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [2/2] (2.32ns)   --->   "%p_Val2_6 = load i16* %data_IN_M_real_V_ad_1, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 62 'load' 'p_Val2_6' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_4 : Operation 63 [2/2] (2.32ns)   --->   "%p_Val2_7 = load i16* %data_IN_M_imag_V_ad_1, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 63 'load' 'p_Val2_7' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+
+State 5 <SV = 4> <Delay = 10.7>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_10 = sext i9 %p_r_M_imag_V to i24" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 64 'sext' 'tmp_10' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (3.36ns)   --->   "%tmp_2_i_i_cast = mul i24 %tmp_9, %tmp_10" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 65 'mul' 'tmp_2_i_i_cast' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 66 [1/1] (3.02ns)   --->   "%p_Val2_s = sub i24 %tmp1_i_i_cast, %tmp_2_i_i_cast" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 66 'sub' 'p_Val2_s' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%p_Val2_3 = call i16 @_ssdm_op_PartSelect.i16.i24.i32.i32(i24 %p_Val2_s, i32 8, i32 23)" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 67 'partselect' 'p_Val2_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 68 [1/1] (3.36ns)   --->   "%tmp_1_i_i_cast = mul i24 %tmp_10, %tmp_1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 68 'mul' 'tmp_1_i_i_cast' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 69 [1/1] (3.02ns)   --->   "%p_Val2_1 = add i24 %tmp_i_i_cast, %tmp_1_i_i_cast" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 69 'add' 'p_Val2_1' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%p_Val2_5 = call i16 @_ssdm_op_PartSelect.i16.i24.i32.i32(i24 %p_Val2_1, i32 8, i32 23)" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30]   --->   Operation 70 'partselect' 'p_Val2_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 71 [1/2] (2.32ns)   --->   "%p_Val2_6 = load i16* %data_IN_M_real_V_ad_1, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 71 'load' 'p_Val2_6' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_5 : Operation 72 [1/2] (2.32ns)   --->   "%p_Val2_7 = load i16* %data_IN_M_imag_V_ad_1, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 72 'load' 'p_Val2_7' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_5 : Operation 73 [1/1] (2.07ns)   --->   "%complex_M_real_V_wr = sub i16 %p_Val2_6, %p_Val2_3" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 73 'sub' 'complex_M_real_V_wr' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 74 [1/1] (2.07ns)   --->   "%complex_M_imag_V_wr = sub i16 %p_Val2_7, %p_Val2_5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 74 'sub' 'complex_M_imag_V_wr' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%data_OUT_M_real_V_a = getelementptr [32 x i16]* %data_OUT_M_real_V, i64 0, i64 %tmp_4" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 75 'getelementptr' 'data_OUT_M_real_V_a' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 76 [1/1] (2.32ns)   --->   "store i16 %complex_M_real_V_wr, i16* %data_OUT_M_real_V_a, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 76 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%data_OUT_M_imag_V_a = getelementptr [32 x i16]* %data_OUT_M_imag_V, i64 0, i64 %tmp_4" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 77 'getelementptr' 'data_OUT_M_imag_V_a' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (2.32ns)   --->   "store i16 %complex_M_imag_V_wr, i16* %data_OUT_M_imag_V_a, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31]   --->   Operation 78 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_5 : Operation 79 [1/1] (2.07ns)   --->   "%complex_M_real_V_wr_1 = add i16 %p_Val2_6, %p_Val2_3" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32]   --->   Operation 79 'add' 'complex_M_real_V_wr_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 80 [1/1] (2.07ns)   --->   "%complex_M_imag_V_wr_1 = add i16 %p_Val2_7, %p_Val2_5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32]   --->   Operation 80 'add' 'complex_M_imag_V_wr_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.32>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str2) nounwind" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:26]   --->   Operation 81 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%data_OUT_M_real_V_a_1 = getelementptr [32 x i16]* %data_OUT_M_real_V, i64 0, i64 %tmp_5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32]   --->   Operation 82 'getelementptr' 'data_OUT_M_real_V_a_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (2.32ns)   --->   "store i16 %complex_M_real_V_wr_1, i16* %data_OUT_M_real_V_a_1, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32]   --->   Operation 83 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_6 : Operation 84 [1/1] (0.00ns)   --->   "%data_OUT_M_imag_V_a_1 = getelementptr [32 x i16]* %data_OUT_M_imag_V, i64 0, i64 %tmp_5" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32]   --->   Operation 84 'getelementptr' 'data_OUT_M_imag_V_a_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 85 [1/1] (2.32ns)   --->   "store i16 %complex_M_imag_V_wr_1, i16* %data_OUT_M_imag_V_a_1, align 2" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32]   --->   Operation 85 'store' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "br label %1" [../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:26]   --->   Operation 86 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.78ns
+The critical path consists of the following:
+	wire read on port 'pass_check' [13]  (0 ns)
+	'add' operation ('tmp_s', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:35) [22]  (1.78 ns)
+
+ <State 2>: 7.67ns
+The critical path consists of the following:
+	'phi' operation ('butterfly_span', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33) with incoming values : ('butterfly_span_2', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:33) [26]  (0 ns)
+	'shl' operation ('index', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:27) [35]  (4.42 ns)
+	'getelementptr' operation ('W_M_real_V_addr', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) [40]  (0 ns)
+	'load' operation ('__x._M_real.V', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) on array 'W_M_real_V' [45]  (3.25 ns)
+
+ <State 3>: 4.87ns
+The critical path consists of the following:
+	'add' operation ('Llimit', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:29) [38]  (2.55 ns)
+	'getelementptr' operation ('data_IN_M_imag_V_ad', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) [44]  (0 ns)
+	'load' operation ('__y._M_imag.V', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) on array 'data_IN_M_imag_V' [48]  (2.32 ns)
+
+ <State 4>: 8.7ns
+The critical path consists of the following:
+	'load' operation ('__y._M_real.V', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) on array 'data_IN_M_real_V' [47]  (2.32 ns)
+	'mul' operation ('tmp1_i_i_cast', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) [53]  (6.38 ns)
+
+ <State 5>: 10.8ns
+The critical path consists of the following:
+	'mul' operation ('tmp_2_i_i_cast', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) [54]  (3.36 ns)
+	'sub' operation ('__Val2__', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:30) [55]  (3.02 ns)
+	'sub' operation ('complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31) [66]  (2.08 ns)
+	'store' operation (../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:31 on array 'data_OUT_M_real_V' [69]  (2.32 ns)
+
+ <State 6>: 2.32ns
+The critical path consists of the following:
+	'getelementptr' operation ('data_OUT_M_real_V_a_1', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32) [74]  (0 ns)
+	'store' operation (../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32) of variable 'complex<ap_fixed<16, 8, 5, 3, 0> >._M_real.V', ../teach-fpga-master/teach-fpga-master/01-fft/vhls/fixed/fft.cpp:32 on array 'data_OUT_M_real_V' [75]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

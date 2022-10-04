@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft.cpp" path="D:\1_EE5332\teach-fpga-master\teach-fpga-master\01-fft\vhls\fixed\fft.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="out_cpp.txt" path="D:\1_EE5332\teach-fpga-master\teach-fpga-master\01-fft\vhls\fixed\out_cpp.txt"/>
+    <originFiles name="inp_cpp.txt" path="D:\1_EE5332\teach-fpga-master\teach-fpga-master\01-fft\vhls\fixed\inp_cpp.txt"/>
+    <originFiles name="fft_tb.cpp" path="D:\1_EE5332\teach-fpga-master\teach-fpga-master\01-fft\vhls\fixed\fft_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
